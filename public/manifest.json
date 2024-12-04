@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Editor",
+  "description": "Enhance your LinkedIn posts with custom text styles like bold, italic directly from the compose screen.",
+  "version": "1.0.0",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon-16.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/in/*/overlay/create-post/", "https://x.com/compose/post"],  
+      "js": ["contentScript.js"],
+      "type": "module"
+    }
+  ]
+}
