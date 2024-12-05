@@ -3,7 +3,7 @@
   "name": "LinkedIn Editor",
   "description": "Enhance your LinkedIn posts with custom text styles like bold, italic directly from the compose screen.",
   "version": "1.0.0",
-  "permissions": ["scripting", "activeTab"],
+  "permissions": ["scripting"],
   "host_permissions": ["<all_urls>"],
   "action": {
     "default_popup": "index.html",
@@ -15,7 +15,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.linkedin.com/in/*/overlay/create-post/", "https://x.com/compose/post"],  
+      "matches": ["https://www.linkedin.com/*", "https://x.com/*"],  
       "js": ["contentScript.js"],
       "type": "module"
     }

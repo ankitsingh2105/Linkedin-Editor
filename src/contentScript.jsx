@@ -1,5 +1,5 @@
 
-console.log("Content Script Loaded!");
+console.log("Linkedin Editor Loaded");
 const boldMap = {
     'a': '𝗮', 'b': '𝗯', 'c': '𝗰', 'd': '𝗱', 'e': '𝗲', 'f': '𝗳', 'g': '𝗴', 'h': '𝗵', 'i': '𝗶',
     'j': '𝗷', 'k': '𝗸', 'l': '𝗹', 'm': '𝗺', 'n': '𝗻', 'o': '𝗼', 'p': '𝗽', 'q': '𝗾', 'r': '𝗿', 's': '𝘀',
@@ -36,6 +36,21 @@ function mapToItalicUnicode(text) {
     return text.split('').map(char => italicMap[char] || char).join('');
 }
 
+function applyBulletList() {
+    const selection = window.getSelection();
+    const range = selection.getRangeAt(0);
+    const selectedText = selection.toString();
+
+    const items = selectedText.split("\n").map(item => item.trim()).filter(item => item !== "");
+
+    const bulletList = items.map(item => `• ${item}`).join("\n");
+
+    range.deleteContents();
+    range.insertNode(document.createTextNode(bulletList));
+
+}
+
+
 function applyBold() {
     const selection = window.getSelection();
     const range = selection.getRangeAt(0);
@@ -44,11 +59,13 @@ function applyBold() {
 
     // todo :: Delete the selected text
     range.deleteContents();
-    
+
     // todo :: Insert the bold-styled text
     const newNode = document.createTextNode(boldText);
     range.insertNode(newNode);
-    
+
+
+
     // todo :: cursor moved to the end
     const newRange = document.createRange();
     newRange.setStart(newNode, newNode.length);
@@ -68,11 +85,11 @@ function applyItalic() {
 
     // todo :: Delete the selected text
     range.deleteContents();
-    
+
     // todo :: Insert the italic-styled text
     const newNode = document.createTextNode(italicText);
     range.insertNode(newNode);
-    
+
     // todo :: cursor moved to the end
     const newRange = document.createRange();
     newRange.setStart(newNode, newNode.length);
@@ -83,7 +100,7 @@ function applyItalic() {
     selection.addRange(newRange);
 }
 
-
+// https://www.linkedin.com/in/ankitchauhan21/overlay/create-post/
 
 
 document.addEventListener('keydown', (event) => {
@@ -92,7 +109,11 @@ document.addEventListener('keydown', (event) => {
         applyBold();
     }
     if (event.ctrlKey && event.key === 'i') {
-        console.log("Ctrl + I");
+        console.log("Ctrl + i");
         applyItalic();
+    }
+    if (event.ctrlKey && event.key === 'y') {
+        console.log("Ctrl + y");
+        applyBulletList();
     }
 });
