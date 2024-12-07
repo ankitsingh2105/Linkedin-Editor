@@ -43,13 +43,10 @@ _Add relevant screenshots or gifs here._
 ```plaintext
 linkedin-editor/
 │
-├── icons/
-│   ├── icon-16.png   (16x16 icon for the extension)  
-│   ├── icon-48.png   (48x48 icon for the extension)  
-│   ├── icon-128.png  (128x128 icon for the extension)  
-│
+│── icon-16.png   (16x16 icon for the extension)  
+│── icon-48.png   (48x48 icon for the extension)  
+│── icon-128.png  (128x128 icon for the extension)  
 ├── manifest.json      (Configuration file for the Chrome extension)  
 ├── contentScript.js   (Script to handle text styling on specific pages)  
-├── index.html         (Popup UI for the extension)  
-├── popup.js           (Logic for the popup UI)  
+├── popup.html         (Popup UI for the extension)  
 └── README.md          (Documentation for the repository)  

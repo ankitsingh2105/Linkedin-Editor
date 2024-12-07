@@ -1,77 +1,138 @@
-import { useState } from 'react'
-import './App.css'
-import image from "./icon-16.png"
+import { useState } from "react";
+import "./App.css";
 import linkedin from "../public/linkedin.png";
 import gmail from "../public/gmail.png";
 import github from "../public/github.png";
 
 function App() {
-  const style = {
+  const headerStyle = {
     background: "#0a66c2",
     color: "white",
-    padding: "10px 0px",
+    padding: "15px",
     textAlign: "center",
-    width: "16rem",
-    marginTop: "-20px",
     borderRadius: "10px",
-  }
+    marginBottom: "20px",
+    fontSize: "24px",
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+    width : "17rem"
+  };
 
   const instructionsStyle = {
-    marginTop: "20px",
-    padding: "10px",
-    backgroundColor: "#f1f1f1",
-    borderRadius: "8px",
+    backgroundColor: "#ffffff",
+    borderRadius: "10px",
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
     fontSize: "12px",
     maxWidth: "600px",
     margin: "20px auto",
-    textAlign: "center"
-  }
+    textAlign: "center",
+    lineHeight: "1.6",
+    padding :"10px"
+  };
 
   const socialLinkStyle = {
-    margin: "10px 5px",
-    padding: "10px",
+    display: "inline-block",
+    margin: "10px 10px",
+    padding: "10px 15px",
     backgroundColor: "#4CAF50",
     color: "white",
     border: "none",
     borderRadius: "5px",
     cursor: "pointer",
-    fontSize: "12px",
+    fontSize: "14px",
     textDecoration: "none",
-    display: "inline-block"
-  }
+    transition: "background-color 0.3s ease",
+  };
+
+  const iconStyle = {
+    width: "24px",
+    margin: "0 10px",
+    cursor: "pointer",
+    transition: "transform 0.3s ease",
+  };
+
+  const sectionStyle = {
+    marginTop: "20px",
+    display: "flex",
+    justifyContent: "center",
+    gap: "20px",
+  };
 
   return (
     <center>
-      <h1 style={style}>Linkedin Editor</h1>
+      <div style={headerStyle}>Linkedin Editor</div>
       <div style={instructionsStyle}>
-        <h3>~Instructions for Text Formatting~</h3>
-        <p><strong>Ctrl + B</strong>: Make text <strong>Bold</strong></p>
-        <p><strong>Ctrl + I</strong>: Make text <em>Italic</em></p>
-        <p><strong>Ctrl + Y</strong>: Make list with bullet points</p>
-        <b>Use the above keyboard shortcuts to format your text while typing for a post on Linkedin.</b>
+        <h3 style={{ marginBottom: "15px", color: "#333" }}>
+          ~ Instructions for Text Formatting ~
+        </h3>
+        <p>
+          <strong>Ctrl + B</strong>: Make text <strong>Bold</strong>
+        </p>
+        <p>
+          <strong>Ctrl + I</strong>: Make text <em>Italic</em>
+        </p>
+        <p>
+          <strong>Ctrl + Y</strong>: Make a bulleted list
+        </p>
+        <p>
+          <strong>Ctrl + M</strong>: Make a numbered list
+        </p>
+        <p style={{ marginTop: "15px", color: "#555" }}>
+          Use these shortcuts while typing a post on LinkedIn.
+        </p>
       </div>
 
-      {/* Green Button */}
-      <a href="https://www.ankitsinghchauhan.in" target="_blank" rel="noopener noreferrer" style={socialLinkStyle}>
-        <b>Developed by Ankit Singh Chauhan</b>
+      <a
+        href="https://www.ankitsinghchauhan.in"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={socialLinkStyle}
+      >
+        <b>
+
+        Developed by &nbsp;
+        <b style={{color:"#383838"}} >Ankit Singh Chauhan</b>
+        </b>
       </a>
-      <br />
-      <br />
-      <section>
-        <a style={{ padding: "0px 30px" }} href="https://www.linkedin.com/in/ankitsingh2105/" target="_blank" rel="noopener noreferrer">
-          <img style={{ width: "20px" }} src={linkedin} alt="LinkedIn" />
+
+      <section style={sectionStyle}>
+        <a
+          href="https://www.linkedin.com/in/ankitchauhan21/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            style={iconStyle}
+            src={linkedin}
+            alt="LinkedIn"
+            onMouseOver={(e) => (e.target.style.transform = "scale(1.2)")}
+            onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+          />
         </a>
-        <a style={{ padding: "0px 30px" }} href="https://github.com/ankitsingh2105" target="_blank" rel="noopener noreferrer">
-          <img style={{ width: "20px" }} src={github} alt="GitHub" />
+        <a
+          href="https://github.com/ankitsingh2105"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            style={iconStyle}
+            src={github}
+            alt="GitHub"
+            onMouseOver={(e) => (e.target.style.transform = "scale(1.2)")}
+            onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+          />
         </a>
-        <a style={{ padding: "0px 30px" }} href="mailto:ankitchauhan21500@gmail.com">
-          <img style={{ width: "20px" }} src={gmail} alt="Gmail" />
+        <a href="mailto:ankitchauhan21500@gmail.com">
+          <img
+            style={iconStyle}
+            src={gmail}
+            alt="Gmail"
+            onMouseOver={(e) => (e.target.style.transform = "scale(1.2)")}
+            onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+          />
         </a>
       </section>
-
-
     </center>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -50,6 +50,20 @@ function applyBulletList() {
 
 }
 
+function applyNumberList() {
+    const selection = window.getSelection();
+    const range = selection.getRangeAt(0);
+    const selectedText = selection.toString();
+
+    const items = selectedText.split("\n").map(item => item.trim()).filter(item => item !== "");
+
+    const bulletList = items.map((item, index) => `${index+1}. ${item}`).join("\n");
+
+    range.deleteContents();
+    range.insertNode(document.createTextNode(bulletList));
+
+}
+
 
 function applyBold() {
     const selection = window.getSelection();
@@ -115,5 +129,10 @@ document.addEventListener('keydown', (event) => {
     if (event.ctrlKey && event.key === 'y') {
         console.log("Ctrl + y");
         applyBulletList();
+    }
+
+    if (event.ctrlKey && event.key === 'm') {
+        console.log("Ctrl + m");
+        applyNumberList();
     }
 });
