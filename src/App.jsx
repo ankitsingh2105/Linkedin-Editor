@@ -14,7 +14,8 @@ function App() {
     marginBottom: "20px",
     fontSize: "24px",
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-    width : "17rem"
+    width : "17rem",
+    fontWeight: "bolder"
   };
 
   const instructionsStyle = {
