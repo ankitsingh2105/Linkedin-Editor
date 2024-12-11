@@ -8,9 +8,6 @@ LinkedIn Editor is a Chrome extension that enhances your LinkedIn and X.com (for
 - **Context-Specific Activation**: The extension activates only on LinkedIn post creation pages (`/overlay/create-post/`) and X.com compose pages.  
 - **Unicode Support**: Formats text into Unicode-compatible styles to ensure compatibility across platforms.  
 
-## Screenshots  
-![Example Screenshot](path-to-your-screenshot.png)  
-_Add relevant screenshots or gifs here._  
 
 ## Installation  
 1. Clone the repository:  
