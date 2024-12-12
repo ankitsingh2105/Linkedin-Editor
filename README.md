@@ -31,6 +31,8 @@ LinkedIn Editor is a Chrome extension that enhances your LinkedIn and X.com (for
    - `Ctrl+Y` for bullet list   
    - `Ctrl+M` for numbered list  
 
+
+
 ## Keyboard Shortcuts  
 | Shortcut | Action          |  
 |----------|-----------------|  
@@ -38,6 +40,12 @@ LinkedIn Editor is a Chrome extension that enhances your LinkedIn and X.com (for
 | `Ctrl+I` | Apply Italic     |  
 | `Ctrl+Y` | Apply  bullet list  |  
 | `Ctrl+M` | Apply  numbered list  |  
+
+
+##Demo Video
+
+https://github.com/user-attachments/assets/98aa98a2-6389-457e-bc6f-e6b94a313df8
+
 
 ## File Structure  
 ```plaintext
@@ -50,4 +58,9 @@ linkedin-editor/
 ├── manifest.json      (Configuration file for the Chrome extension)  
 ├── contentScript.js   (Script to handle text styling on specific pages)  
 ├── index.html         (Popup UI for the extension)  
-└── README.md          (Documentation for the repository)  
+└── README.md          (Documentation for the repository)
+
+```
+
+## Developer
+- **Ankit Singh Chauhan:** Visit [ankitsinghchauhan.in](https://ankitsinghchauhan.in) all projects I have made. 
