@@ -1,9 +1,9 @@
 # LinkedIn Editor  
 
-LinkedIn Editor is a Chrome extension that enhances your LinkedIn and X.com (formerly Twitter) post-creation experience by directly formatting text with bold, italic, and underlined styles within the compose screen.  
+LinkedIn Editor is a Chrome extension that enhances your LinkedIn post-creation experience by directly formatting text with bold, italic, and lists styles within the compose screen.  
 
 ## Features  
-- **Text Styling**: Apply bold, italic, and underlined formatting to selected text.  
+- **Text Styling**: Apply bold, italic, and list formatting to selected text.  
 - **Keyboard Shortcuts**: Use `Ctrl+B` for bold, `Ctrl+I` for italic, `Ctrl+U` for numbered list, and `Ctrl+Y` for bullet list.  
 - **Context-Specific Activation**: The extension activates only on LinkedIn post creation pages.  
 
