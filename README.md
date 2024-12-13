@@ -7,7 +7,7 @@ LinkedIn Editor is a Chrome extension that enhances your LinkedIn post-creation 
 - **Keyboard Shortcuts**: Use `Ctrl+B` for bold, `Ctrl+I` for italic, `Ctrl+U` for numbered list, and `Ctrl+Y` for bullet list.  
 - **Context-Specific Activation**: The extension activates only on LinkedIn post creation pages.  
 
-- ##Demo Video
+## Demo Video
 
 https://github.com/user-attachments/assets/98aa98a2-6389-457e-bc6f-e6b94a313df8
 
