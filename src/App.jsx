@@ -27,7 +27,8 @@ function App() {
     margin: "20px auto",
     textAlign: "center",
     lineHeight: "1.6",
-    padding :"10px"
+    padding :"10px",
+    marginBottom : "-5px"
   };
 
   const socialLinkStyle = {
@@ -77,11 +78,12 @@ function App() {
         <p>
           <strong>Ctrl + M</strong>: Make a numbered list
         </p>
-        <p style={{ marginTop: "15px", color: "#555" }}>
+        <br />
+        <b style={{ marginTop: "15px", color:"#00c200" }}>
           Use these shortcuts while typing a post on LinkedIn.
-        </p>
+        </b>
       </div>
-
+{/* 
       <a
         href="https://www.ankitsinghchauhan.in"
         target="_blank"
@@ -131,7 +133,7 @@ function App() {
             onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
           />
         </a>
-      </section>
+      </section> */}
     </center>
   );
 }
