@@ -1,4 +1,3 @@
-chat
 
 const italicMap = {
     'a': '𝑎', 'b': '𝑏', 'c': '𝑐', 'd': '𝑑', 'e': '𝑒', 'f': '𝑓', 'g': '𝑔', 'h': 'ℎ', 'i': '𝑖',
@@ -14,19 +13,34 @@ const italicMap = {
     '}': '｝', '~': '～', '€': '€', '£': '£', '¥': '¥', '¢': '¢', '©': '©', '®': '®', '™': '™'
 };
 
-console.log("LinkedIn Editor Loaded");
-
 const underlineMap = {
-    'a': 'a\u0332', 'b': 'b\u0332', 'c': 'c\u0332', 'd': 'd\u0332', 'e': 'e\u0332', 'f': 'f\u0332', 'g': 'g\u0332', 'h': 'h\u0332', 'i': 'i\u0332',
-    'j': 'j\u0332', 'k': 'k\u0332', 'l': 'l\u0332', 'm': 'm\u0332', 'n': 'n\u0332', 'o': 'o\u0332', 'p': 'p\u0332', 'q': 'q\u0332', 'r': 'r\u0332', 's': 's\u0332',
-    't': 't\u0332', 'u': 'u\u0332', 'v': 'v\u0332', 'w': 'w\u0332', 'x': 'x\u0332', 'y': 'y\u0332', 'z': 'z\u0332',
-    'A': 'A\u0332', 'B': 'B\u0332', 'C': 'C\u0332', 'D': 'D\u0332', 'E': 'E\u0332', 'F': 'F\u0332', 'G': 'G\u0332', 'H': 'H\u0332', 'I': 'I\u0332',
-    'J': 'J\u0332', 'K': 'K\u0332', 'L': 'L\u0332', 'M': 'M\u0332', 'N': 'N\u0332', 'O': 'O\u0332', 'P': 'P\u0332', 'Q': 'Q\u0332', 'R': 'R\u0332', 'S': 'S\u0332',
-    'T': 'T\u0332', 'U': 'U\u0332', 'V': 'V\u0332', 'W': 'W\u0332', 'X': 'X\u0332', 'Y': 'Y\u0332', 'Z': 'Z\u0332',
-    '0': '0\u0332', '1': '1\u0332', '2': '2\u0332', '3': '3\u0332', '4': '4\u0332', '5': '5\u0332', '6': '6\u0332', '7': '7\u0332', '8': '8\u0332', '9': '9\u0332',
-    '!': '!̲', '@': '@̲', '#': '#̲', '$': '$̲', '%': '%̲', '^': '^̲', '&': '&̲', '*': '*̲', '(': '(̲', ')': ')̲',
+    'a': '𝑎̲', 'b': '𝑏̲', 'c': '𝑐̲', 'd': '𝑑̲', 'e': '𝑒̲', 'f': '𝑓̲', 'g': '𝑔̲', 'h': 'ℎ̲', 'i': '𝑖̲',
+    'j': '𝐽̲', 'k': '𝑘̲', 'l': '𝑙̲', 'm': '𝑚̲', 'n': '𝑛̲', 'o': '𝑜̲', 'p': '𝑝̲', 'q': '𝑞̲', 'r': '𝑟̲', 's': '𝑠̲',
+    't': '𝑡̲', 'u': '𝑢̲', 'v': '𝑣̲', 'w': '𝑤̲', 'x': '𝑥̲', 'y': '𝑦̲', 'z': '𝑧̲',
+    'A': '𝐴̲', 'B': '𝐵̲', 'C': '𝐶̲', 'D': '𝐷̲', 'E': '𝐸̲', 'F': '𝐹̲', 'G': '𝐺̲', 'H': '𝐻̲', 'I': '𝐼̲',
+    'J': '𝐽̲', 'K': '𝐾̲', 'L': '𝐿̲', 'M': '𝑀̲', 'N': '𝑁̲', 'O': '𝑂̲', 'P': '𝑃̲', 'Q': '𝑄̲', 'R': '𝑅̲', 'S': '𝑆̲',
+    'T': '𝑇̲', 'U': '𝑈̲', 'V': '𝑉̲', 'W': '𝑊̲', 'X': '𝑋̲', 'Y': '𝑌̲', 'Z': '𝑍̲',
+    '0': '𝟎̲', '1': '𝟏̲', '2': '𝟐̲', '3': '𝟑̲', '4': '𝟒̲', '5': '𝟓̲', '6': '𝟔̲', '7': '𝟕̲', '8': '𝟖̲', '9': '𝟗̲',
+    '!': '‼̲', '@': '@̲', '#': '#̲', '$': '$̲', '%': '%̲', '^': '^̲', '&': '&̲', '*': '*̲', '(': '(̲', ')': ')̲',
     '-': '-̲', '=': '=̲', '+': '+̲', '[': '[̲', ']': ']̲', '{': '{̲', '}': '}̲', '\\': '\\̲', '|': '|̲', ';': ';̲',
     ':': ':̲', '"': '"̲', '\'': '\'̲', ',': ',̲', '.': '.̲', '/': '/̲', '<': '<̲', '>': '>̲'
+};
+
+
+
+
+const boldMap = {
+    'a': '𝐚', 'b': '𝐛', 'c': '𝐜', 'd': '𝐝', 'e': '𝐞', 'f': '𝐟', 'g': '𝐠', 'h': '𝐡', 'i': '𝐢',
+    'j': '𝐣', 'k': '𝐤', 'l': '𝐥', 'm': '𝐦', 'n': '𝐧', 'o': '𝐨', 'p': '𝐩', 'q': '𝐪', 'r': '𝐫', 's': '𝐬',
+    't': '𝐭', 'u': '𝐮', 'v': '𝐯', 'w': '𝐰', 'x': '𝐱', 'y': '𝐲', 'z': '𝐳',
+    'A': '𝐀', 'B': '𝐁', 'C': '𝐂', 'D': '𝐃', 'E': '𝐄', 'F': '𝐅', 'G': '𝐆', 'H': '𝐇', 'I': '𝐈',
+    'J': '𝐉', 'K': '𝐊', 'L': '𝐋', 'M': '𝐌', 'N': '𝐍', 'O': '𝐎', 'P': '𝐏', 'Q': '𝐐', 'R': '𝐑', 'S': '𝐒',
+    'T': '𝐓', 'U': '𝐔', 'V': '𝐕', 'W': '𝐖', 'X': '𝐗', 'Y': '𝐘', 'Z': '𝐙',
+    '0': '𝟎', '1': '𝟏', '2': '𝟐', '3': '𝟑', '4': '𝟒', '5': '𝟓', '6': '𝟔', '7': '𝟕', '8': '𝟖', '9': '𝟗',
+    '!': '!', '"': '"', '#': '#', '$': '$', '%': '%', '&': '&', "'": "'", '(': '(', ')': ')', '*': '*',
+    '+': '+', ',': ',', '-': '-', '.': '.', '/': '/', ':': ':', ';': ';', '<': '<', '=': '=', '>': '>',
+    '?': '?', '@': '@', '[': '[', '\\': '\\', ']': ']', '^': '^', '_': '_', '`': '`', '{': '{', '|': '|',
+    '}': '}', '~': '~', '€': '€', '£': '£', '¥': '¥', '¢': '¢', '©': '©', '®': '®', '™': '™'
 };
 
 
@@ -37,6 +51,11 @@ function mapToBoldUnicode(text) {
 
 function mapToItalicUnicode(text) {
     return text.split('').map(char => italicMap[char] || char).join('');
+}
+
+
+function mapToUnderlineUnicode(text) {
+    return text.split('').map(char => underlineMap[char] || char).join('');
 }
 
 function applyBulletList(text) {
@@ -60,7 +79,7 @@ function applyNumberList() {
 
     const items = selectedText.split("\n").map(item => item.trim()).filter(item => item !== "");
 
-    const bulletList = items.map((item, index) => `${index+1}. ${item}`).join("\n");
+    const bulletList = items.map((item, index) => `${index + 1}. ${item}`).join("\n");
 
     range.deleteContents();
     range.insertNode(document.createTextNode(bulletList));
@@ -122,13 +141,14 @@ function applyUnderline() {
     const selection = window.getSelection();
     const range = selection.getRangeAt(0);
     const selectedText = selection.toString();
-    const italicText = underlineMap(selectedText);
+    const underlineText = mapToUnderlineUnicode(selectedText);
+    console.log("text is :: " , selectedText);
 
     // todo :: Delete the selected text
     range.deleteContents();
 
     // todo :: Insert the italic-styled text
-    const newNode = document.createTextNode(italicText);
+    const newNode = document.createTextNode(underlineText);
     range.insertNode(newNode);
 
     // todo :: cursor moved to the end
@@ -141,30 +161,24 @@ function applyUnderline() {
     selection.addRange(newRange);
 }
 
-// https://www.linkedin.com/in/ankitchauhan21/overlay/create-post/
 
 
 document.addEventListener('keydown', (event) => {
     if (event.ctrlKey && event.key === 'b') {
-        console.log("Ctrl + B");
         applyBold();
     }
     if (event.ctrlKey && event.key === 'i') {
-        console.log("Ctrl + i");
         applyItalic();
     }
     if (event.ctrlKey && event.key === 'y') {
-        console.log("Ctrl + y");
         applyBulletList();
     }
 
     if (event.ctrlKey && event.key === 'm') {
-        console.log("Ctrl + m");
         applyNumberList();
     }
 
     if (event.altKey && event.key === 'u') {
-        console.log("Ctrl + u");
         applyUnderline();
     }
 });

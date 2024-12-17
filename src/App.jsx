@@ -78,10 +78,16 @@ function App() {
         <p>
           <strong>Ctrl + M</strong>: Make a numbered list
         </p>
+        <p>
+          <strong>Alt + U</strong>: Make text underline <u>Underline</u>
+        </p>
         <br />
         <b style={{ marginTop: "15px", color:"#00c200" }}>
-          Use these shortcuts while typing a post on LinkedIn.
+          Use these shortcuts on a selected text in a Linkedin Post
         </b>
+        <p>
+          <i>Lists work when the selected text has multiple lines.</i>
+        </p>
       </div>
 {/* 
       <a
