@@ -89,6 +89,9 @@ function applyNumberList() {
 
 function applyBold() {
     const selection = window.getSelection();
+    if (!selection || selection.rangeCount === 0) {
+        return; 
+    }
     const range = selection.getRangeAt(0);
     const selectedText = selection.toString();
     const boldText = mapToBoldUnicode(selectedText);
@@ -115,6 +118,9 @@ function applyBold() {
 
 function applyItalic() {
     const selection = window.getSelection();
+    if (!selection || selection.rangeCount === 0) {
+        return; 
+    }
     const range = selection.getRangeAt(0);
     const selectedText = selection.toString();
     const italicText = mapToItalicUnicode(selectedText);
@@ -142,7 +148,6 @@ function applyUnderline() {
     const range = selection.getRangeAt(0);
     const selectedText = selection.toString();
     const underlineText = mapToUnderlineUnicode(selectedText);
-    console.log("text is :: " , selectedText);
 
     // todo :: Delete the selected text
     range.deleteContents();
@@ -173,12 +178,11 @@ document.addEventListener('keydown', (event) => {
     if (event.ctrlKey && event.key === 'y') {
         applyBulletList();
     }
-
     if (event.ctrlKey && event.key === 'm') {
         applyNumberList();
     }
 
-    if (event.altKey && event.key === 'u') {
-        applyUnderline();
-    }
+    // if (event.altKey && event.key === 'u') {
+    //     applyUnderline();
+    // }
 });

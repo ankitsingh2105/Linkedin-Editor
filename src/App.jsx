@@ -78,9 +78,9 @@ function App() {
         <p>
           <strong>Ctrl + M</strong>: Make a numbered list
         </p>
-        <p>
+        {/* <p>
           <strong>Alt + U</strong>: Make text underline <u>Underline</u>
-        </p>
+        </p> */}
         <br />
         <b style={{ marginTop: "15px", color:"#00c200" }}>
           Use these shortcuts on a selected text in a Linkedin Post
