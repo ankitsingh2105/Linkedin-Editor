@@ -83,11 +83,11 @@ function App() {
         </p> */}
         <br />
         <b style={{ marginTop: "15px", color:"#00c200" }}>
-          Use these shortcuts on a selected text in a Linkedin Post
+          Selected the text and use these shortcuts in a Linkedin Post
         </b>
-        <p>
+        {/* <p>
           <i>Lists work when the selected text has multiple lines.</i>
-        </p>
+        </p> */}
       </div>
 {/* 
       <a

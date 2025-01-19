@@ -58,7 +58,7 @@ function mapToUnderlineUnicode(text) {
     return text.split('').map(char => underlineMap[char] || char).join('');
 }
 
-function applyBulletList(text) {
+function applyBulletList() {
     const selection = window.getSelection();
     const range = selection.getRangeAt(0);
     const selectedText = selection.toString();
