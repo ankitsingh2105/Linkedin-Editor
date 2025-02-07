@@ -73,7 +73,7 @@ function App() {
           <strong>Ctrl + I</strong>: Make text <em>Italic</em>
         </p>
         <p>
-          <strong>Ctrl + Y</strong>: Make a bulleted list
+          <strong>Ctrl + Q</strong>: Make a bulleted list
         </p>
         <p>
           <strong>Ctrl + M</strong>: Make a numbered list
