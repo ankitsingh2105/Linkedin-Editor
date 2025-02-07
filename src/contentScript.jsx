@@ -173,7 +173,7 @@ document.addEventListener('keydown', (event) => {
     if (event.ctrlKey && event.key === 'i') {
         applyItalic();
     }
-    if (event.ctrlKey && event.key === 'y') {
+    if (event.ctrlKey && event.key === 'q') {
         applyBulletList();
     }
     if (event.ctrlKey && event.key === 'm') {
