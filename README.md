@@ -1,11 +1,13 @@
 # LinkedIn Editor  
 
-LinkedIn Editor is a Chrome extension that enhances your LinkedIn post-creation experience by directly formatting text with bold, italic, and lists styles within the compose screen.  
+LinkedIn Editor is a Chrome extension that enhances your LinkedIn post-creation experience by directly formatting text with bold, italic, and list styles within the compose screen.  
 
 ## Features  
 - **Text Styling**: Apply bold, italic, and list formatting to selected text.  
 - **Keyboard Shortcuts**: Use `Ctrl+B` for bold, `Ctrl+I` for italic, `Ctrl+U` for numbered list, and `Ctrl+Y` for bullet list.  
-- **Context-Specific Activation**: The extension activates only on LinkedIn post creation pages.  
+- **Context-Specific Activation**: The extension activates only on LinkedIn post creation pages.
+  
+![Copy of ExtensionDemoImage2 0](https://github.com/user-attachments/assets/a702dbfa-2b00-4aa3-a9a7-734db1baf323)
 
 ## Demo Video
 
@@ -31,7 +33,7 @@ https://github.com/user-attachments/assets/98aa98a2-6389-457e-bc6f-e6b94a313df8
 3. Use the following keyboard shortcuts to apply text styling:  
    - `Ctrl+B` for bold  
    - `Ctrl+I` for italic  
-   - `Ctrl+Y` for bullet list   
+   - `Ctrl+Q` for bullet list   
    - `Ctrl+M` for numbered list  
 
 
@@ -41,7 +43,7 @@ https://github.com/user-attachments/assets/98aa98a2-6389-457e-bc6f-e6b94a313df8
 |----------|-----------------|  
 | `Ctrl+B` | Apply Bold       |  
 | `Ctrl+I` | Apply Italic     |  
-| `Ctrl+Y` | Apply  bullet list  |  
+| `Ctrl+Q` | Apply  bullet list  |  
 | `Ctrl+M` | Apply  numbered list  |  
 
 
@@ -61,4 +63,4 @@ linkedin-editor/
 ```
 
 ## Developer
-- **Ankit Singh Chauhan:** Visit [ankitsinghchauhan.in](https://ankitsinghchauhan.in) all projects I have made. 
+- **Ankit Singh Chauhan:** Visit [ankitsinghchauhan.in](https://ankitsinghchauhan.in) for all projects I have made. 
