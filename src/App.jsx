@@ -30,16 +30,9 @@ function App() {
   const [feedback, setFeedback] = useState("");
   const [showNotification, setShowNotification] = useState(false);
 
-  useEffect(() => {
-    if (!localStorage.getItem("reviewNotificationShown")) {
-      setShowNotification(true);
-      localStorage.setItem("reviewNotificationShown", "true");
-    }
-  }, []);
-
   const handleSubmit = async () => {
     try {
-      if(rating == 0){
+      if (rating == 0) {
         alert("Pleae give rating before submitting, thanks");
         return;
       }
@@ -56,13 +49,8 @@ function App() {
 
   return (
     <center>
-      {showNotification && (
-        <div style={{ background: "#ffcc00", padding: "10px", borderRadius: "5px", marginBottom: "10px", fontWeight: "bold" }}>
-          New feature: You can now submit reviews and feedback!
-        </div>
-      )}
 
-      <div style={{ background: "#0a66c2", color: "white", padding: "15px", textAlign: "center", borderRadius: "10px", marginBottom: "20px", fontSize: "24px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", width: "17rem", fontWeight: "bolder" }}>Linkedin Editor</div>
+      <div style={{ background: "#0a66c2", color: "white", padding: "15px", textAlign: "center", borderRadius: "10px", marginBottom: "20px", fontSize: "24px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", width: "18rem", fontWeight: "bolder" }}>Linkedin Editor</div>
       <div style={{ backgroundColor: "#ffffff", borderRadius: "10px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", fontSize: "12px", maxWidth: "600px", margin: "20px auto", textAlign: "center", lineHeight: "1.6", padding: "10px" }}>
         <h3 style={{ marginBottom: "15px", color: "#333" }}>~ Instructions for Text Formatting ~</h3>
         <p><strong>Ctrl + B</strong>: Make text <strong>Bold</strong></p>
@@ -73,29 +61,7 @@ function App() {
         <b style={{ marginTop: "15px", color: "#00c200" }}>Select text and use these shortcuts in a Linkedin Post</b>
       </div>
       <div>
-        <h3>Rate this Extension</h3>
-        <a href="https://chromewebstore.google.com/detail/linkedin-editor/dpbccjhabjmnohefgjoongadmjpanfmd/reviews" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "#0a66c2", fontWeight: "bold" }}>Please rate on the official page - Click here</a>
-        <br /><br />
-        <b>AND / OR</b>
-        <br /><br />
-        {[...Array(5)].map((star, index) => {
-          index += 1;
-          return (
-            <button
-              key={index}
-              style={{ background: "none", border: "none", cursor: "pointer", fontSize: "24px", color: index <= (hover || rating) ? "#ffc107" : "#e4e5e9" }}
-              onClick={() => setRating(index)}
-              onMouseEnter={() => setHover(index)}
-              onMouseLeave={() => setHover(rating)}
-            >
-              ★
-            </button>
-          );
-        })}
-        <br /><br />
-        <input required type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)} style={{ padding: "5px", marginBottom: "10px", borderRadius: "5px", border: "1px solid #ccc" }} /><br />
-        <input placeholder="What can we improve" value={feedback} onChange={(e) => setFeedback(e.target.value)} style={{ padding: "5px", marginBottom: "10px", borderRadius: "5px", border: "1px solid #ccc", width: "200px" }} /><br />
-        <button onClick={handleSubmit} style={{ padding: "10px 15px", background: "#4CAF50", color: "white", border: "none", borderRadius: "5px", cursor: "pointer" }}>Submit Review</button>
+        <a href="https://chromewebstore.google.com/detail/linkedin-editor/dpbccjhabjmnohefgjoongadmjpanfmd/reviews" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "#0a66c2", fontWeight: "bold" }}>Please rate us on the official page - Click here</a>
       </div>
       <br />
     </center>

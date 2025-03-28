@@ -2,12 +2,8 @@
   "manifest_version": 3,
   "name": "LinkedIn Editor",
   "description": "Enhance your LinkedIn posts with custom text styles like bold, italic, lists on selected text directly from the compose screen.",
-  "version": "1.2.3",
+  "version": "1.2.5",
   "host_permissions": ["https://www.linkedin.com/*"],
-  "permissions": ["notifications"],  
-  "background": {
-    "service_worker": "background.js"
-  },
   "action": {
     "default_popup": "index.html",
     "default_icon": {
