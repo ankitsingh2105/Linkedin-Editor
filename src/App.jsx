@@ -64,6 +64,10 @@ function App() {
         <a href="https://chromewebstore.google.com/detail/linkedin-editor/dpbccjhabjmnohefgjoongadmjpanfmd/reviews" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "#0a66c2", fontWeight: "bold" }}>Please rate us on the official page - Click here</a>
       </div>
       <br />
+      <div>
+        <a href="https://linkeditor.netlify.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "#00c200", fontWeight: "bold" }}>Our official website</a>
+      </div>
+      <br />
     </center>
   );
 }
