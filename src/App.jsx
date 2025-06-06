@@ -50,7 +50,7 @@ function App() {
   return (
     <center>
 
-      <div style={{ background: "#0a66c2", color: "white", padding: "15px", textAlign: "center", borderRadius: "10px", marginBottom: "20px", fontSize: "24px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", width: "18rem", fontWeight: "bolder" }}>Linkedin Editor</div>
+      <div style={{ background: "#0a66c2", color: "white", padding: "15px", textAlign: "center", borderRadius: "10px", marginBottom: "20px", fontSize: "24px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", width: "18rem", fontWeight: "bolder" }}>EnhanceIn</div>
       <div style={{ backgroundColor: "#ffffff", borderRadius: "10px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", fontSize: "12px", maxWidth: "600px", margin: "20px auto", textAlign: "center", lineHeight: "1.6", padding: "10px" }}>
         <h3 style={{ marginBottom: "15px", color: "#333" }}>~ Instructions for Text Formatting ~</h3>
         <p><strong>Ctrl + B</strong>: Make text <strong>Bold</strong></p>
@@ -60,13 +60,13 @@ function App() {
         <br />
         <b style={{ marginTop: "15px", color: "#00c200" }}>Select text and use these shortcuts in a Linkedin Post</b>
       </div>
-      <div>
-        <a href="https://chromewebstore.google.com/detail/linkedin-editor/dpbccjhabjmnohefgjoongadmjpanfmd/reviews" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "#0a66c2", fontWeight: "bold" }}>Please rate us on the official page - Click here</a>
+      <div style={{ textDecoration: "none", color: "#0a66c2", fontWeight: "bold" }}>
+        The extension was renamed to EnhanceIn to avoid copyright issues.
       </div>
-      <br />
+      {/* <br />
       <div>
         <a href="https://linkeditor.netlify.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "#00c200", fontWeight: "bold" }}>Our official website</a>
-      </div>
+      </div> */}
       <br />
     </center>
   );

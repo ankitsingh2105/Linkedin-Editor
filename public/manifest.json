@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "LinkedIn Editor - Bold, Italic, Lists & Format Your LinkedIn Posts",
+  "name": "EnhanceIn - Bold, Italic, Lists & Format Your LinkedIn Posts",
   "description": "Enhance your LinkedIn posts with custom text styles like bold, italic, lists on selected text directly from the compose screen.",
   "version": "1.5.7",
   "host_permissions": ["https://www.linkedin.com/*"],

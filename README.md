@@ -1,6 +1,6 @@
-# LinkedIn Editor  
+# EnhanceIn 
 
-LinkedIn Editor is a Chrome extension that enhances your LinkedIn post-creation experience by directly formatting text with bold, italic, and list styles within the compose screen.  
+EnhanceIn is a Chrome extension that enhances your LinkedIn post-creation experience by directly formatting text with bold, italic, and list styles within the compose screen.  
 
 ## Features  
 - **Text Styling**: Apply bold, italic, and list formatting to selected text.  
